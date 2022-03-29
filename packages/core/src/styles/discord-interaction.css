@@ -77,8 +77,13 @@
 }
 
 .discord-interaction .discord-interaction-command .discord-interaction-command-name {
-	color: #7289da;
+	color: hsl(197,100%,47.8%);
 	opacity: 0.65;
+}
+
+.discord-interaction .discord-interaction-command .discord-interaction-command-name:hover {
+	opacity: 1;
+	text-decoration: underline;
 }
 
 .discord-interaction .discord-interaction-reply {
