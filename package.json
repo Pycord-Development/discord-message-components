@@ -9,6 +9,7 @@
   "license": "MIT",
   "scripts": {
     "build:core": "yarn workspace @discord-message-components/core build",
+    "build:markdown": "yarn workspace @discord-message-components/markdown build",
     "build:react": "yarn workspace @discord-message-components/react build",
     "build:vue": "yarn workspace @discord-message-components/vue build",
     "build:react:storybook": "yarn workspace @discord-message-components/react build-storybook",
