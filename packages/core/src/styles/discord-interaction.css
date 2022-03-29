@@ -79,6 +79,7 @@
 .discord-interaction .discord-interaction-command .discord-interaction-command-name {
 	color: hsl(197,100%,47.8%);
 	opacity: 0.65;
+	font-weight: 500;
 }
 
 .discord-interaction .discord-interaction-command .discord-interaction-command-name:hover {
