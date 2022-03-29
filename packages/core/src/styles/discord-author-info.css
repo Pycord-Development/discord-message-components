@@ -3,6 +3,11 @@
 	display: inline-flex;
 	align-items: center;
 	font-size: 15px;
+	font-weight: 500;
+}
+
+.discord-message .discord-author-info > * {
+	font-weight: inherit;
 }
 
 .discord-compact-mode .discord-message .discord-author-info {
@@ -12,8 +17,10 @@
 
 .discord-message .discord-author-info .discord-author-username {
 	font-size: 1.1em;
-	font-weight: 500;
-	letter-spacing: 0.5px;
+}
+
+.discord-message .discord-author-info .discord-author-username:hover {
+	text-decoration: underline;
 }
 
 .discord-compact-mode .discord-message .discord-author-info .discord-author-username {
