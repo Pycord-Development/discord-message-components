@@ -16,7 +16,11 @@
     "build:vue:storybook": "yarn workspace @discord-message-components/vue build-storybook",
     "dev:react:storybook": "yarn build:core && yarn workspace @discord-message-components/react storybook",
     "dev:vue:storybook": "yarn build:core && yarn workspace @discord-message-components/vue storybook"
-},
+  },
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
