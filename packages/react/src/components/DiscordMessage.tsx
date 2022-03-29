@@ -44,7 +44,7 @@ export default function DiscordMessage({
 	profile: profileKey,
 	roleColor,
 	timestamp = util.defaultTimestamp,
-	useTwemoji,
+	useTwemoji = true,
 }: DiscordMessageProps & { compactMode?: boolean }): ReactElement {
 	const options: DiscordMessageOptions = useContext(DiscordOptionsContext) ?? DiscordDefaultOptions
 
