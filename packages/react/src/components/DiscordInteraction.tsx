@@ -15,7 +15,8 @@ export type DiscordInteractionProps = {
 	ephemeral?: boolean
 	highlight?: boolean
 	profile?: string
-	roleColor?: string
+	roleColor?: string,
+	contextMenu?: boolean,
 } & PropsWithSlot
 
 export default function DiscordInteraction({
@@ -28,6 +29,7 @@ export default function DiscordInteraction({
 	highlight,
 	profile: profileKey,
 	roleColor,
+	contextMenu,
 }: DiscordInteractionProps): ReactElement {
 	const options: DiscordMessageOptions = useContext(DiscordOptionsContext) ?? DiscordDefaultOptions
 
@@ -48,11 +50,13 @@ export default function DiscordInteraction({
 				bot={user.bot}
 				roleColor={user.roleColor}
 			/>
-			{command
-				? <span className="discord-interaction-command">
+			{command || contextMenu
+				? <span className={`discord-interaction-command${contextMenu
+					? ' discord-interaction-context-menu'
+					: ''}`}>
 					used{' '}
 					<span className="discord-interaction-command-name">
-						/{children}
+						{contextMenu ? '' : '/'}{children}
 					</span>
 				</span>
 				: <span className="discord-interaction-reply">
