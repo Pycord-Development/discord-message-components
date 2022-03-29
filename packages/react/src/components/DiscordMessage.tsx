@@ -5,6 +5,7 @@ import DiscordDefaultOptions, { DiscordMessageOptions, Profile } from '../contex
 import DiscordOptionsContext from '../context/DiscordOptionsContext'
 import AuthorInfo from './AuthorInfo'
 import '@discord-message-components/core/dist/styles/discord-message.css'
+import Twemoji from 'react-twemoji'
 
 export type DiscordMessageProps = PropsWithChildren<{
 	author?: string
@@ -13,8 +14,25 @@ export type DiscordMessageProps = PropsWithChildren<{
 	edited?: boolean
 	profile?: string
 	roleColor?: string
-	timestamp?: Date | string
+	timestamp?: Date | string,
+	useTwemoji?: boolean
 }>
+
+type MaybeTwemojiProps = PropsWithChildren<{
+	useTwemoji?: boolean
+}>
+
+
+function MaybeTwemoji({
+	useTwemoji,
+	children,
+}: MaybeTwemojiProps): ReactElement {
+	if (useTwemoji) {
+		return <Twemoji>{children}</Twemoji>
+	}
+	return <>{children}</>
+}
+
 
 export default function DiscordMessage({
 	author,
@@ -26,6 +44,7 @@ export default function DiscordMessage({
 	profile: profileKey,
 	roleColor,
 	timestamp = util.defaultTimestamp,
+	useTwemoji,
 }: DiscordMessageProps & { compactMode?: boolean }): ReactElement {
 	const options: DiscordMessageOptions = useContext(DiscordOptionsContext) ?? DiscordDefaultOptions
 
@@ -93,37 +112,39 @@ export default function DiscordMessage({
 	if (highlightMessage && !ephemeralMessage) messageClasses += ' discord-mention-highlight'
 
 	return (
-		<div className={messageClasses}>
-			{slots.interactions}
-			<div className="discord-message-content">
-				<div className="discord-author-avatar">
-					<img src={user.avatar} alt="" />
-				</div>
-				<div className="discord-message-body">
-					{!compactMode
-						? <div>
-							<AuthorInfo author={user.author} bot={user.bot} roleColor={user.roleColor} />
-							<span className="discord-message-timestamp">
-								{messageTimestamp}
-							</span>
-						</div>
-						: <Fragment>
-							<span className="discord-message-timestamp">
-								{messageTimestamp}
-							</span>
-							<AuthorInfo author={user.author} bot={user.bot} roleColor={user.roleColor} />
-						</Fragment>
-					}
-					{slots.default}
-					{edited && <span className="discord-message-edited">(edited)</span>}
-					{slots.embeds}
-					{slots.actions}
-					{ephemeralMessage && <div className="discord-message-ephemeral-notice">
-						Only you can see this
-					</div>}
-					{slots.reactions}
+		<MaybeTwemoji useTwemoji={useTwemoji}>
+			<div className={messageClasses}>
+				{slots.interactions}
+				<div className="discord-message-content">
+					<div className="discord-author-avatar">
+						<img src={user.avatar} alt="" />
+					</div>
+					<div className="discord-message-body">
+						{!compactMode
+							? <div>
+								<AuthorInfo author={user.author} bot={user.bot} roleColor={user.roleColor} />
+								<span className="discord-message-timestamp">
+									{messageTimestamp}
+								</span>
+							</div>
+							: <Fragment>
+								<span className="discord-message-timestamp">
+									{messageTimestamp}
+								</span>
+								<AuthorInfo author={user.author} bot={user.bot} roleColor={user.roleColor} />
+							</Fragment>
+						}
+						{slots.default}
+						{edited && <span className="discord-message-edited">(edited)</span>}
+						{slots.embeds}
+						{slots.actions}
+						{ephemeralMessage && <div className="discord-message-ephemeral-notice">
+							Only you can see this
+						</div>}
+						{slots.reactions}
+					</div>
 				</div>
 			</div>
-		</div>
+		</MaybeTwemoji>
 	)
 }
