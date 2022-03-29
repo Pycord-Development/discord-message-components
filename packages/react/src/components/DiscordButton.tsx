@@ -33,6 +33,7 @@ export default function DiscordButton({ children, disabled, image, type = 'prima
 				disabled={disabled}
 			>
 				{image && <img className="discord-button-emoji" src={image} alt="" />}
+				{emoji && <Twemoji options={{ className: 'discord-button-emoji' }}>{emoji}</Twemoji>}
 				{children}
 				{type === 'link' && <OutboundLinkIcon />}
 			</button>
