@@ -19,16 +19,18 @@ export type DiscordMessageProps = PropsWithChildren<{
 }>
 
 type MaybeTwemojiProps = PropsWithChildren<{
-	useTwemoji?: boolean
+	useTwemoji?: boolean,
+	jumboable?: boolean
 }>
 
 
 function MaybeTwemoji({
 	useTwemoji,
+	jumboable,
 	children,
 }: MaybeTwemojiProps): ReactElement {
 	if (useTwemoji) {
-		return <Twemoji>{children}</Twemoji>
+		return <Twemoji options={{ className: `emoji${jumboable ? ' jumboable' : ''}` }}>{children}</Twemoji>
 	}
 	return <>{children}</>
 }
@@ -111,8 +113,12 @@ export default function DiscordMessage({
 	if (ephemeralMessage) messageClasses += ' discord-ephemeral-highlight'
 	if (highlightMessage && !ephemeralMessage) messageClasses += ' discord-mention-highlight'
 
+	const emoji_regex = /^(?:[\p{Extended_Pictographic}\u{1F3FB}-\u{1F3FF}\u{1F9B0}-\u{1F9B3}]|\s)*$/ug
+
 	return (
-		<MaybeTwemoji useTwemoji={useTwemoji}>
+		<MaybeTwemoji useTwemoji={useTwemoji} jumboable={emoji_regex.test(
+			(slots.default ? slots.default : '').toString(),
+		)}>
 			<div className={messageClasses}>
 				{slots.interactions}
 				<div className="discord-message-content">
