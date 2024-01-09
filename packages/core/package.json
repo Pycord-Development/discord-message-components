@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/color-rgba": "^2.1.0",
     "rollup-plugin-copy": "^3.4.0",
-    "vite": "^2.0.1"
+    "vite": "^5.0.11"
   },
   "dependencies": {
     "@pycord/discord-message-components-markdown": "^0.2.0",
