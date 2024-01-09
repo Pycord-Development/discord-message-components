@@ -1,11 +1,11 @@
 {
   "name": "@pycord/discord-message-components-core",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/core.umd.js",
-  "module": "./dist/core.es.js",
+  "main": "./dist/discord-message-components-core.umd.js",
+  "module": "./dist/discord-message-components-core.es.js",
   "types": "src/index.d.ts",
   "files": [
     "dist"
