@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@pycord/discord-message-components-markdown": "^0.2.0",
-    "color-rgba": "^2.2.3"
+    "color-rgba": "^3.0.0"
   },
   "gitHead": "1e5ae8e0fe8afa656bfed9b95c9b61fd7aad3d4d"
 }
