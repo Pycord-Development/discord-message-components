@@ -1,6 +1,6 @@
 <script lang="ts">
 import { VNode, defineComponent, h } from 'vue'
-import { util } from '@discord-message-components/core'
+import { util } from '@pycord/discord-message-components-core'
 
 export default defineComponent({
 	name: 'DiscordMarkdown',
@@ -22,4 +22,4 @@ export default defineComponent({
 })
 </script>
 
-<style src="@discord-message-components/core/dist/styles/discord-markdown.css"></style>
+<style src="@pycord/discord-message-components-core/dist/styles/discord-markdown.css"></style>

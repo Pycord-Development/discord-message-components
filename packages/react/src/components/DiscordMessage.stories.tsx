@@ -1,6 +1,6 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
-import { util } from '@discord-message-components/core'
+import { util } from '@pycord/discord-message-components-core'
 import DiscordDefaultOptions from '../context/DiscordDefaultOptions'
 import DiscordOptionsContext from '../context/DiscordOptionsContext'
 import DiscordMessage, { DiscordMessageProps } from './DiscordMessage'

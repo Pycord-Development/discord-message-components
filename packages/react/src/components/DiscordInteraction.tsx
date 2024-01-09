@@ -1,10 +1,10 @@
 import React, { ReactElement, useContext } from 'react'
-import { util } from '@discord-message-components/core'
+import { util } from '@pycord/discord-message-components-core'
 import DiscordDefaultOptions, { DiscordMessageOptions, Profile } from '../context/DiscordDefaultOptions'
 import DiscordOptionsContext from '../context/DiscordOptionsContext'
 import { PropsWithSlot } from '../util'
 import AuthorInfo from './AuthorInfo'
-import '@discord-message-components/core/dist/styles/discord-interaction.css'
+import '@pycord/discord-message-components-core/dist/styles/discord-interaction.css'
 
 export type DiscordInteractionProps = {
 	author?: string

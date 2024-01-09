@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import '@discord-message-components/core/dist/styles/discord-reaction.css'
+import '@pycord/discord-message-components-core/dist/styles/discord-reaction.css'
 
 export type DiscordReactionProps = {
 	active?: boolean

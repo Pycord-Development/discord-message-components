@@ -1,4 +1,4 @@
-# @discord-message-components/markdown
+# @pycord/discord-message-components-markdown
 
 A markdown parser for Discord messages.
 
@@ -7,14 +7,14 @@ A markdown parser for Discord messages.
 ## Using
 
 ```bash
-yarn add @discord-message-components/markdown
-npm i @discord-message-components/markdown
+yarn add @pycord/discord-message-components-markdown
+npm i @pycord/discord-message-components-markdown
 ```
 
 For browser use, import `dist/markdown.min.js`
 
 ```js
-const { parser, htmlOutput, toHTML } = require('@discord-message-components/markdown')
+const { parser, htmlOutput, toHTML } = require('@pycord/discord-message-components-markdown')
 
 console.log(toHTML('This **is** a __test__'))
 // => This <strong>is</strong> a <u>test</u>
@@ -23,7 +23,7 @@ console.log(toHTML('This **is** a __test__'))
 ## Options
 
 ```js
-const { toHTML } = require('@discord-message-components/markdown')
+const { toHTML } = require('@pycord/discord-message-components-markdown')
 toHTML('This **is** a __test__', options)
 ```
 
@@ -47,7 +47,7 @@ Using the `discordCallback` option you can define custom functions to handle par
 Example:
 
 ```js
-const { toHTML } = require('@discord-message-components/markdown')
+const { toHTML } = require('@pycord/discord-message-components-markdown')
 toHTML('This is a mention for <@95286900801146880>', {
 	discordCallback: {
 		user: node => '@' + users[node.id],

@@ -22,4 +22,4 @@ export default defineComponent({
 })
 </script>
 
-<style src="@discord-message-components/core/dist/styles/discord-author-info.css"></style>
+<style src="@pycord/discord-message-components-core/dist/styles/discord-author-info.css"></style>

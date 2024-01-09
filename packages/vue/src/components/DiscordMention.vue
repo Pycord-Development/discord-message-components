@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { computed, defineComponent, onBeforeUnmount, onMounted, ref, toRefs } from 'vue'
-import { util } from '@discord-message-components/core'
+import { util } from '@pycord/discord-message-components-core'
 import { resolveOptions } from '../options'
 
 export default defineComponent({
@@ -77,4 +77,4 @@ export default defineComponent({
 })
 </script>
 
-<style src="@discord-message-components/core/dist/styles/discord-mention.css"></style>
+<style src="@pycord/discord-message-components-core/dist/styles/discord-mention.css"></style>

@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/vue3'
-import { util } from '@discord-message-components/core'
+import { util } from '@pycord/discord-message-components-core'
 import DiscordMessage from './DiscordMessage.vue'
 import DiscordMessages from './DiscordMessages.vue'
 

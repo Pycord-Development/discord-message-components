@@ -1,7 +1,7 @@
 import React, { ReactElement, isValidElement } from 'react'
-import { util } from '@discord-message-components/core'
+import { util } from '@pycord/discord-message-components-core'
 import { PropsWithSlot, elementsWithoutSlot, findSlot } from '../util'
-import '@discord-message-components/core/dist/styles/discord-embed.css'
+import '@pycord/discord-message-components-core/dist/styles/discord-embed.css'
 
 export type DiscordEmbedProps = {
 	authorIcon?: string

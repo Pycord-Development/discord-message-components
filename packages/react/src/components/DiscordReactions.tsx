@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
 import { PropsWithSlot } from '../util'
-import '@discord-message-components/core/dist/styles/discord-reactions.css'
+import '@pycord/discord-message-components-core/dist/styles/discord-reactions.css'
 
 export default function DiscordReactions({ children }: PropsWithSlot): ReactElement {
 	return (

@@ -1,5 +1,5 @@
 import { getCurrentInstance } from 'vue'
-import { avatars as discordAvatars } from '@discord-message-components/core'
+import { avatars as discordAvatars } from '@pycord/discord-message-components-core'
 
 export type Avatars = {
 	blue: string

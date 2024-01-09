@@ -1,19 +1,19 @@
-# @discord-message-components/vue
+# @pycord/discord-message-components-vue
 
 ## Installation and usage
 
-![@discord-message-components/vue preview](https://i.imgur.com/ZxsfkHb.png)
+![@pycord/discord-message-components-vue preview](https://i.imgur.com/ZxsfkHb.png)
 
 ```sh
-yarn add @discord-message-components/vue
-# or npm install @discord-message-components/vue
+yarn add @pycord/discord-message-components-vue
+# or npm install @pycord/discord-message-components-vue
 ```
 
 ```js
 import { createApp } from 'vue'
-import { install as DiscordMessageComponents } from '@discord-message-components/vue'
+import { install as DiscordMessageComponents } from '@pycord/discord-message-components-vue'
 import App from './App.vue'
-import '@discord-message-components/vue/dist/style.css'
+import '@pycord/discord-message-components-vue/dist/style.css'
 
 const app = createApp(App)
 
@@ -70,7 +70,7 @@ import {
 	DiscordMessages,
 	DiscordReaction,
 	DiscordReactions,
-} from '@discord-message-components/vue'
+} from '@pycord/discord-message-components-vue'
 </script>
 ```
 
@@ -90,7 +90,7 @@ This is the recommended approach due to how VuePress renders Markdown and HTML i
 
 ### Upgrading from vue-discord-message
 
-The components have been kept mostly the same, with many improvements and some breaking changes. `@discord-message-components/vue` doesn't support Vue 2 (yet), so be sure you're using Vue 3 with this package. [vue-discord-message](https://github.com/danktuary/vue-discord-message) supports Vue 2 but is outdated.
+The components have been kept mostly the same, with many improvements and some breaking changes. `@pycord/discord-message-components-vue` doesn't support Vue 2 (yet), so be sure you're using Vue 3 with this package. [vue-discord-message](https://github.com/danktuary/vue-discord-message) supports Vue 2 but is outdated.
 
 **New**:
 - Components: `DiscordButton(s)`, `DiscordInteraction`, `DiscordMarkdown`, and `DiscordReaction(s)`

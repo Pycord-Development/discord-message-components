@@ -1,5 +1,5 @@
 import React, { PropsWithChildren, ReactElement } from 'react'
-import '@discord-message-components/core/dist/styles/discord-embed-field.css'
+import '@pycord/discord-message-components-core/dist/styles/discord-embed-field.css'
 
 export type DiscordEmbedFieldProps = PropsWithChildren<{
 	inline?: boolean

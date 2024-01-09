@@ -1,12 +1,12 @@
-# @discord-message-components/react
+# @pycord/discord-message-components-react
 
 ## Installation and usage
 
-![@discord-message-components/react preview](https://i.imgur.com/ZxsfkHb.png)
+![@pycord/discord-message-components-react preview](https://i.imgur.com/ZxsfkHb.png)
 
 ```sh
-yarn add @discord-message-components/react
-# or npm install @discord-message-components/react
+yarn add @pycord/discord-message-components-react
+# or npm install @pycord/discord-message-components-react
 ```
 
 ```js
@@ -21,8 +21,8 @@ import {
 	DiscordOptionsContext,
 	DiscordReaction,
 	DiscordReactions,
-} from '@discord-message-components/react'
-import '@discord-message-components/react/dist/style.css'
+} from '@pycord/discord-message-components-react'
+import '@pycord/discord-message-components-react/dist/style.css'
 
 // Extend the default options in order to provide your own
 const discordOptions = {

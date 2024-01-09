@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import { PropsWithSlot } from '../util'
 import OutboundLinkIcon from './OutboundLinkIcon'
-import '@discord-message-components/core/dist/styles/discord-button.css'
+import '@pycord/discord-message-components-core/dist/styles/discord-button.css'
 import Twemoji from 'react-twemoji'
 
 export type DiscordButtonProps = {

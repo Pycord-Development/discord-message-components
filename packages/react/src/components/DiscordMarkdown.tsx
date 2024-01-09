@@ -1,6 +1,6 @@
 import React, { Children, ReactElement, ReactNode } from 'react'
-import { util } from '@discord-message-components/core'
-import '@discord-message-components/core/dist/styles/discord-markdown.css'
+import { util } from '@pycord/discord-message-components-core'
+import '@pycord/discord-message-components-core/dist/styles/discord-markdown.css'
 
 export default function DiscordMarkdown({ children }: { children?: ReactNode }): ReactElement {
 	const parsedContent = Children.map((children as ReactElement[]), (child: ReactNode): ReactNode => {

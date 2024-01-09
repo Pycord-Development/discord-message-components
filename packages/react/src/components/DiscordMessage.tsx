@@ -1,10 +1,10 @@
 import React, { Fragment, PropsWithChildren, ReactElement, ReactNode, isValidElement, useContext } from 'react'
-import { util } from '@discord-message-components/core'
+import { util } from '@pycord/discord-message-components-core'
 import { elementsWithoutSlot, findSlot } from '../util'
 import DiscordDefaultOptions, { DiscordMessageOptions, Profile } from '../context/DiscordDefaultOptions'
 import DiscordOptionsContext from '../context/DiscordOptionsContext'
 import AuthorInfo from './AuthorInfo'
-import '@discord-message-components/core/dist/styles/discord-message.css'
+import '@pycord/discord-message-components-core/dist/styles/discord-message.css'
 import Twemoji from 'react-twemoji'
 
 export type DiscordMessageProps = PropsWithChildren<{

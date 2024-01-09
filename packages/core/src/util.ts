@@ -1,5 +1,5 @@
 import colorToRgba from 'color-rgba'
-export { default as markdownParser } from '@discord-message-components/markdown'
+export { default as markdownParser } from '@pycord/discord-message-components-markdown'
 
 export const parseColorToRgba = (color?: string, alpha?: number): string | null => {
 	if (!color) return null

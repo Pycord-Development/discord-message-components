@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import '@discord-message-components/core/dist/styles/discord-author-info.css'
+import '@pycord/discord-message-components-core/dist/styles/discord-author-info.css'
 
 type AuthorInfoProps = {
 	author?: string

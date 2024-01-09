@@ -1,4 +1,4 @@
-import { avatars } from '@discord-message-components/core'
+import { avatars } from '@pycord/discord-message-components-core'
 
 export type Avatars = {
 	blue: string

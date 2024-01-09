@@ -22,7 +22,7 @@
 
 <script lang="ts">
 import { defineComponent, toRefs } from 'vue'
-import { util } from '@discord-message-components/core'
+import { util } from '@pycord/discord-message-components-core'
 import { Profile, resolveOptions } from '../options'
 import AuthorInfo from './AuthorInfo.vue'
 
@@ -63,4 +63,4 @@ export default defineComponent({
 })
 </script>
 
-<style src="@discord-message-components/core/dist/styles/discord-interaction.css"></style>
+<style src="@pycord/discord-message-components-core/dist/styles/discord-interaction.css"></style>

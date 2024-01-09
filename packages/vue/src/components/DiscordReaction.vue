@@ -25,4 +25,4 @@ export default defineComponent({
 })
 </script>
 
-<style src="@discord-message-components/core/dist/styles/discord-reaction.css"></style>
+<style src="@pycord/discord-message-components-core/dist/styles/discord-reaction.css"></style>

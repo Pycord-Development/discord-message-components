@@ -1,5 +1,5 @@
 {
-  "name": "@discord-message-components/react",
+  "name": "@pycord/discord-message-components-react",
   "version": "0.2.1",
   "publishConfig": {
     "access": "public"
@@ -27,7 +27,7 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@discord-message-components/core": "^0.2.1",
+    "@pycord/discord-message-components-core": "^0.2.1",
     "react-twemoji": "^0.5.0"
   },
   "peerDependencies": {
