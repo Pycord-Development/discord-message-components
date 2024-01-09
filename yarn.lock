@@ -3512,9 +3512,9 @@
     "@types/react" "*"
 
 "@types/react-twemoji@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@types/react-twemoji/-/react-twemoji-0.4.0.tgz#3f3ce96e273ec0aa4b4ddca2913951b168fd72ee"
-  integrity sha512-OVkDaNTg9WqqM2MBqL68FNPsn+5aabQIbL9KY+ofK/Q4ENOuaHOWsg/jRD9zQ+GX5L+7LC1Ztgr4iK0/qZd17w==
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@types/react-twemoji/-/react-twemoji-0.4.3.tgz#83542b47ffcee8c872b669a05e74a5ef7876e497"
+  integrity sha512-VzWkjmO8yJ31JSWgQhe0LCLU3FxcurTOklECm9p8v1xI/WfUBOGbSrqPjQPL46LE4oOqfrYIQ+0LM/8I6A8EDQ==
   dependencies:
     "@types/react" "*"
 
