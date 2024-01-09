@@ -37,7 +37,7 @@
     "@storybook/addon-actions": "^7.6.7",
     "@storybook/addon-essentials": "^6.2.7",
     "@storybook/addon-links": "^7.6.7",
-    "@storybook/vue3": "^6.2.7",
+    "@storybook/vue3": "^7.6.7",
     "@vitejs/plugin-vue": "^1.1.4",
     "@vue/compiler-sfc": "^3.0.6",
     "@vue/eslint-config-typescript": "^7.0.0",
