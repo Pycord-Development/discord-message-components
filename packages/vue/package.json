@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.13.8",
-    "@storybook/addon-actions": "^6.2.7",
+    "@storybook/addon-actions": "^7.6.7",
     "@storybook/addon-essentials": "^6.2.7",
     "@storybook/addon-links": "^6.2.7",
     "@storybook/vue3": "^6.2.7",
