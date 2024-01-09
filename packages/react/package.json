@@ -1,18 +1,18 @@
 {
   "name": "@pycord/discord-message-components-react",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/react.umd.js",
-  "module": "./dist/react.es.js",
+  "main": "./dist/discord-message-components-react.umd.js",
+  "module": "./dist/discord-message-components-react.es.js",
   "files": [
     "dist"
   ],
   "exports": {
     ".": {
-      "import": "./dist/react.es.js",
-      "require": "./dist/react.umd.js"
+      "import": "./dist/discord-message-components-react.es.js",
+      "require": "./dist/discord-message-components-react.umd.js"
     },
     "./dist/*": "./dist/*",
     "./styles": "./dist/style.css"
@@ -27,7 +27,7 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "@pycord/discord-message-components-core": "^0.2.1",
+    "@pycord/discord-message-components-core": "^0.3.2",
     "react-twemoji": "^0.5.0"
   },
   "peerDependencies": {
