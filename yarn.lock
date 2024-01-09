@@ -3658,9 +3658,9 @@
     react-refresh "^0.10.0"
 
 "@vitejs/plugin-vue@^1.1.4":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.4.0.tgz#962ae01b7fd16ad4007898c64ed639136e12215b"
-  integrity sha512-RkqfJHz9wdLKBp5Yi+kQL8BAljdrvPoccQm2PTZc/UcL4EjD11xsv2PPCduYx2oV1a/bpSKA3sD5sxOHFhz+LA==
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.7.1.tgz#8b0fc87628425a8ab39798a023c652fcfc0619c9"
+  integrity sha512-ldKF153gyXMXT5ZNkzk05OUXO2rri9fEZE6YOs7WxmTPAGQkwhKtzayke+wXhP5AfRY/Svn71nUVHgJzLMrasg==
 
 "@vue/compiler-core@3.4.6", "@vue/compiler-core@^3.0.0":
   version "3.4.6"
