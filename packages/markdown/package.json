@@ -38,6 +38,6 @@
 		"simple-markdown": "^0.7.3"
 	},
 	"devDependencies": {
-		"vite": "^2.0.1"
+		"vite": "^5.0.11"
 	}
 }
